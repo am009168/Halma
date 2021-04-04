@@ -21,3 +21,9 @@ def move():
 # Win detector: Given a board and a player, correctly returns whether it is a winning (or losing!) board for that player.
 def winDector():
   pass
+
+def main():
+  pass
+
+if __name__ == "__main__":
+  main()
