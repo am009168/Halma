@@ -1,9 +1,3 @@
-# Andrew Munoz 
-# William Fuertes 
-# Uday Bhaskar Savvanna
-# Malik Jones 
-# # # # # # # # # # # 
-
 
 # Graphical board display: Generates nicely-formatted GUI for your system, including the board, plus status and move entry areas
 def boardDisplay():
