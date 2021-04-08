@@ -1,23 +1,35 @@
+import pygame
+from halma.constants import WIDTH, HEIGHT, SQUARE_SIZE
+from halma.board import Board
 
-# Graphical board display: Generates nicely-formatted GUI for your system, including the board, plus status and move entry areas
-def boardDisplay():
-  pass 
+FPS = 60
 
-# Board updating: GUI can receive updates to the board, display them smoothly, and includes move highlighting to chose from/to places of last-moved piece.
-def updateBoard(): 
-  pass
+WIN = pygame.display.set_mode( (WIDTH, HEIGHT) )
+pygame.display.set_caption( 'Halma' )
 
-# Move generator: Given a board and which player to move, it produces a correct and complete list of possible next moves, including jumps. 
-# A “move” method. Takes in a board and a move and returns either a new board (after making move), or an error report detailing a bad move.
-def move():
-  pass
-
-# Win detector: Given a board and a player, correctly returns whether it is a winning (or losing!) board for that player.
-def winDector():
-  pass
+# user being able to move pieces by clicking
+def mouseClick(pos):
+    pass
 
 def main():
-  pass
+    run = True
+    clock = pygame.time.Clock()
+    board = Board()
+
+    while run:
+        clock.tick( FPS )
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                run = False
+
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                pass
+
+        board.draw( WIN )
+        pygame.display.update()
+
+    pygame.quit()
 
 if __name__ == "__main__":
-  main()
+    main()
